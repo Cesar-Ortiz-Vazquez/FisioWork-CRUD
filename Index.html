@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ficha de Identificación</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <img src="/img/FISIO_WORK.png" id="logo" />
+
+  <h1>Fisiowork</h1>
+
+  <h2>Ficha de Identificación</h2>
+  <table id="tablaPaciente">
+    <tr>
+      <th>Nombre</th>
+      <th>Edad</th>
+      <th>Sexo</th>
+      <th>Fecha de Nacimiento</th>
+    </tr>
+    <tr>
+      <td><input type="text" id="nombre" placeholder="Nombre completo aquí" /></td>
+      <td><input type="number" id="edad" placeholder="Edad" /></td>
+      <td>
+        <select id="sexo">
+          <option value="Masculino">Masculino</option>
+          <option value="Femenino">Femenino</option>
+        </select>
+      </td>
+      <td><input type="date" id="fechaNacimiento" /></td>
+    </tr>
+    <tr>
+      <th>Ocupación</th>
+      <th>Número de contacto</th>
+      <th>Estado civil</th>
+      <th>Contacto de emergencia</th>
+    </tr>
+    <tr>
+      <td><input type="text" id="ocupacion" placeholder="Ejemplo: Ingeniero, Estudiante" /></td>
+      <td><input type="tel" id="telefono" placeholder="Tel/Cel" /></td>
+      <td>
+        <select id="estadoCivil">
+          <option value="Soltero/a">Soltero/a</option>
+          <option value="Casado/a">Casado/a</option>
+          <option value="Divorciado/a">Divorciado/a</option>
+          <option value="Viudo/a">Viudo/a</option>
+        </select>
+      </td>
+      <td>
+        <input type="text" id="contactoEmergenciaNombre" placeholder="Nombre del contacto" />
+        <input type="tel" id="contactoEmergenciaTelefono" placeholder="Número de contacto" />
+      </td>
+    </tr>
+  </table>
+
+  <div class="botones">
+    <button id="guardarBtn">Guardar Ficha</button>
+  </div>
+
+  <h2>Fichas Capturadas</h2>
+  <table id="tablaFichas">
+    <thead>
+      <tr>
+        <th class="col-nombre">Nombre</th>
+        <th class="col-edad">Edad</th>
+        <th class="col-ocupacion">Ocupación</th>
+        <th class="col-estadoCivil">Estado Civil</th>
+        <th class="col-contacto">Número de Contacto</th>
+        <th class="col-masDatos">Más Datos</th>
+        <th class="col-editar">Editar</th>
+        <th class="col-eliminar">Eliminar</th>
+      </tr>
+    </thead>
+    <tbody id="listaFichas"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>

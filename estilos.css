@@ -1,0 +1,128 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    margin: 0;
+}
+
+#logo {
+    width: 420px;
+    height: auto;
+    display: block;
+    margin: 300px auto 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    background-color: white;
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* ✅ Control total del ancho de cada columna */
+.col-nombre { width: 180px; }
+.col-edad { width: 80px; text-align: center; }
+.col-ocupacion { width: 180px; }
+.col-estadoCivil { width: 140px; }
+.col-contacto { width: 160px; }
+.col-masDatos { width: 100px; text-align: center; }
+.col-editar { width: 90px; text-align: center; }
+.col-eliminar { width: 100px; text-align: center; }
+
+input, select {
+    width: 100px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#nombre {
+    width: 250px;
+}
+
+#edad {
+    width: 100px;
+}
+
+#sexo {
+    width: 150px;
+}
+
+#fechaNacimiento {
+    width: 180px;
+}
+
+#ocupacion {
+    width: 250px;
+}
+
+#numeroDeContacto {
+    width: 200px;
+    height: 100px;
+}
+
+#estadoCivil {
+    width: 150px;
+}
+
+#contactoEmergenciaNombre, #contactoEmergenciaTelefono {
+    width: 200px;
+}
+
+.botones {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* ✅ Manteniendo tu estilo de #guardarBtn */
+#guardarBtn {
+    background-color: rgb(0, 34, 128);
+    color: white;
+}
+
+/* 🎨 Mejoras en botones dentro de la tabla */
+td button {
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Efectos visuales */
+td button:hover {
+    background-color: #c8c8c8;
+}
+
+td button:active {
+    transform: scale(0.95);
+}
+
+/* 🎯 Estilos individuales */
+td button:nth-child(2) { /* Botón "Editar" */
+    background-color: #ffc107;
+    color: black;
+}
+
+td button:nth-child(3) { /* Botón "Eliminar" */
+    background-color: #dc3545;
+    color: white;
+}
